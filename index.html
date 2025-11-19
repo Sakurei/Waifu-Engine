@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Waifu Powered Engine</title>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <image src="images/logo.png" alt="Logo" class="logo">
+        <div class="hero-text">
+          <h1>Waifu Engine</h1>
+          <p class="tagline">A Waifu Search Engine</p>
+        </div>
+      </image>
+    </div>
+    <form id="Search" class="search-box">
+    <input 
+      id="search-input"
+      type="text"
+      placeholder="Mau cari waifu apa hari ini?"
+      autocomplete="off"
+    />
+    <button type="submit">Search</button>
+    </form>
+
+    <div class="quick-links">
+      <span>Quick Filter: </span>
+      <button type="button" data-prefix="https://stackoverflow.com/questions">StackOverflow</button>
+      <button type="button" data-prefix="https://github.com/Sakurei">GitHub</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
