@@ -9,7 +9,7 @@
 /* Full page background + centering */
 body {
   /* Dark gradient background */
-  background: radial-gradient(circle at top, #1e293b, #020617 55%);
+  background: radial-gradient(circle at top, #f1e5e5, #c2c9e7 55%);
   color: #e5e7eb;                /* Light text color */
   min-height: 100vh;             /* Make body at least full viewport height */
   display: flex;                 /* Use flexbox to center content */
@@ -17,15 +17,6 @@ body {
   justify-content: center;       /* Horizontally center */
 }
 
-/* Card‑like container for the app */
-.container {
-  width: 100%;
-  max-width: 640px;              /* Limit width on large screens */
-  background: rgba(15, 23, 42, 0.95);
-  padding: 2rem 2.5rem;          /* Inner spacing */
-  border-radius: 1.5rem;         /* Rounded corners */
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6); /* Drop shadow */
-}
 
 /* Top section with logo + text in a row */
 .hero {
@@ -40,7 +31,7 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 1.2rem;
-  border: 2px solid #22c55e55;
+  border: 2px solid #5322c555;
   object-fit: cover;      /* keep it covering the box */
   transform: scale(1.4);  /* zoom in 1.4x */
   transform-origin: center; /* zoom from the center */
@@ -110,6 +101,8 @@ button:hover {
   gap: 0.4rem;
   font-size: 0.8rem;
   color: #9ca3af;
+  padding: 8px 14px;   /* tambah padding */
+  gap: 10px;  
 }
 
 /* Style for quick filter buttons specifically */
@@ -123,4 +116,40 @@ button:hover {
 /* Hover effect for quick filter buttons */
 .quick-links button:hover {
   background: #1f2937;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #3f4f71;      /* sesuaikan dengan tema kamu */
+  border-radius: 999px;     /* biar pill */
+  padding: 8px 12px;
+}
+
+#search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 0.95rem;
+  
+}
+
+#search-input::placeholder {
+  color: #9ca3af;
+}
+
+#search-button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 999px;
+  background: #22c55e;      /* hijau tombol */
+  color: #000000;
+  padding: 6px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

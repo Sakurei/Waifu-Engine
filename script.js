@@ -20,3 +20,9 @@ quickButtons.forEach(btn => {
     input.selectionStart = input.selectionEnd = input.value.length;
   });
 });
+const btn   = document.getElementById('search-button');
+
+btn.addEventListener('click', () => {
+  const q = input.value.trim();
+  if (!q) return;
+});
